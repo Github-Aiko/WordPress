@@ -3,7 +3,7 @@
 
 ## Oneclick install
 ```
-apt install update && apt install curl wget -y
+apt update && apt install curl wget -y
 
 ```
 
