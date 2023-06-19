@@ -1,6 +1,16 @@
 # WordPress
  1 Click Install WordPress
 
+## Oneclick install
+```
+apt install update && apt install curl wget -y
+
+```
+
+```
+bash <(curl -ls https://raw.githubusercontent.com/Github-Aiko/WordPress/master/unlock_upload.sh)
+```
+
 ## Build with docker-compose 
 Step 1 : install Environment
 
@@ -36,6 +46,27 @@ http://your-ip-address
 
 ## Unlock WordPress
 
+Step 1 : Get the container ID
+
 ```
-bash <(curl -ls https://raw.githubusercontent.com/Github-Aiko/WordPress/master/unlock_upload.sh)
+docker exec -it wordpress_wordpress_1 /bin/bash
+```
+
+Step 2 : Run the command
+
+```
+echo "php_value upload_max_filesize 60M" >> .htaccess
+echo "php_value post_max_size 60M" >> .htaccess
+```
+
+Step 3 : Exit the container
+
+```
+exit
+```
+
+Step 4 : Restart the container
+
+```
+docker-compose restart wordpress
 ```
