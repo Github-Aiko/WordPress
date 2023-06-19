@@ -8,9 +8,9 @@ apt install update && apt install curl wget -y
 ```
 
 ```
-bash <(curl -ls https://raw.githubusercontent.com/Github-Aiko/WordPress/master/unlock_upload.sh)
-```
+bash <(curl -ls https://raw.githubusercontent.com/Github-Aiko/WordPress/master/install.sh)
 
+```
 ## Build with docker-compose 
 Step 1 : install Environment
 
