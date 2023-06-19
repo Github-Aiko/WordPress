@@ -34,4 +34,8 @@ Step 4 : Open your browser and enter your domain or ip address
 http://your-ip-address
 ```
 
-## Build with docker run
+## Unlock WordPress
+
+```
+bash <(curl -ls https://raw.githubusercontent.com/Github-Aiko/WordPress/master/unlock_upload.sh)
+```
