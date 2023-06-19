@@ -44,7 +44,7 @@ Step 4 : Open your browser and enter your domain or ip address
 http://your-ip-address
 ```
 
-## Unlock WordPress
+## Unlock WordPress ( if you error Full upload php.ini )
 
 Step 1 : Get the container ID
 
