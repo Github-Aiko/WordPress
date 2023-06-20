@@ -2,9 +2,9 @@ version: '3.1'
 
 services:
   wordpress:
-    image: wordpress:latest
+    image: arm64v8/wordpress:latest
     ports:
-      - 80:80
+      - 8080:80
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: exampleuser
@@ -19,7 +19,7 @@ services:
       docker-entrypoint.sh apache2-foreground"
 
   db:
-    image: mysql:latest
+    image: arm64v8/mysql:latest
     environment:
       MYSQL_DATABASE: exampledb
       MYSQL_USER: exampleuser

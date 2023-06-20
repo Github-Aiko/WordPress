@@ -49,7 +49,7 @@ http://your-ip-address
 Step 1 : Get the container ID
 
 ```
-docker exec -it wordpress_wordpress_1 /bin/bash
+docker exec -it wordpress_1 /bin/bash
 ```
 
 Step 2 : Run the command
