@@ -19,7 +19,7 @@ services:
       docker-entrypoint.sh apache2-foreground"
 
   db:
-    image: arm64v8/mysql:latest
+    image: arm64v8/mysql:8.0.33
     environment:
       MYSQL_DATABASE: exampledb
       MYSQL_USER: exampleuser
