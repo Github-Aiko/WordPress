@@ -3,5 +3,9 @@
 ## Mac M1 `Apple Silicon`
 
 Step 1 : 
-clone repo
-Step 2
+` Clone Repo `
+Step 2 : 
+run with `docker-compose up -d` and 
+```
+localhost:8080
+```
