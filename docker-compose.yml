@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   wordpress:
-    image: latest
+    image: wordpress:latest
     ports:
       - 80:80
     environment:
